@@ -1,0 +1,217 @@
+/*
+    name="胡泽钊"
+    description="第三次作业"
+*/
+
+/*对html和body进行基本设置*/
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+/*居中定位*/
+#at-plus-container {
+    position: relative;
+    width: 180px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*底层定位*/
+#bottom-positioner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*大圆圈菜单*/
+#info-bar {
+    position: absolute;
+    /*大小参数与apb保持一致*/
+    width: 26px;
+    height: 26px;
+    bottom: 97px;
+    left: 77px;
+    /*设置圆圈*/
+    border-radius: 50%;
+    /*设置背景颜色*/
+    background-color: #7e7e7e;
+    /*设置动画*/
+    transition: all 0.5s;
+    /*设置不透明度，0即为全透明*/
+    opacity: 0;
+}
+
+/*大圆圈hover*/
+#button:hover #info-bar {
+    /*大小与原图保持一致*/
+    width: 130px;
+    height: 130px;
+    bottom: 150px;
+    left: 25px;
+    /*设置圆圈*/
+    border-radius: 50%;
+    /*设置背景*/
+    background-color: #7e7e7e;
+    /*设置不透明级别，1即为不透明*/
+    opacity: 1;
+}
+
+/*ul基本设置*/
+#info-bar ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*li基本设置*/
+#info-bar li {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    margin-left: 0;
+    color: white;
+}
+
+#info-bar li img {
+    vertical-align: middle;
+}
+
+#info-bar li span {
+    margin-left: 8px;
+}
+
+#info-bar li.mine {
+    /*设置为inline-block使得like和post在同一行，若去掉下面这句语句将会使得两个元素在两行*/
+    display: inline-block;
+    width: 50%;
+    color: lightgreen;
+    font-weight: bold;
+    /*并排放置两个带边框的框需要用到border-box*/
+    box-sizing: border-box;
+}
+
+#info-bar li.posted {
+    padding-left: 15px;
+}
+
+#info-bar li.comment {
+    font-size: 30px;
+}
+
+/*小圆圈菜单*/
+#control-ring-container {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    bottom: 20px;
+    left: 0px;
+    border-radius: 50%;
+}
+
+#control-ring-container li {
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-top: 60px;
+    margin-left: 35px;
+    border-radius: 50%;
+    background-color: #686868;
+    background-position: center;
+    /*一定要设置为no-repeat不然会出现显示错误*/
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    transition: all 0.5s;
+    /*设置不透明度*/
+    opacity: 0;
+}
+
+#button:hover #control-ring-container li {
+    opacity: 1;
+}
+
+/*设置各个小圆圈菜单*/
+#button:hover #control-ring li:nth-child(1) {
+    margin-top: 20px;
+    margin-left: -30px;
+    background-image: url('assets/images/nomask.png');
+}
+
+#button:hover #control-ring li:nth-child(2) {
+    margin-top: 60px;
+    margin-left: -40px;
+    background-image: url('assets/images/history.png');
+}
+
+#button:hover #control-ring li:nth-child(3) {
+    margin-top: 102px;
+    margin-left: -26px;
+    background-image: url('assets/images/message.png');
+}
+
+#button:hover #control-ring li:nth-child(4) {
+    margin-top: 129px;
+    margin-left: 12px;
+    background-image: url('assets/images/setting.png');
+}
+
+#button:hover #control-ring li:nth-child(5) {
+    margin-top: 128px;
+    margin-left: 60px;
+    background-image: url('assets/images/signin.png');
+}
+
+/*设置信息菜单的未读标识*/
+#control-ring li span.unread {
+    position: absolute;
+    top: -2px;
+    right: -10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: #e0d6dc;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+/*用于设置鼠标感应区域，不宜过大，也不宜过小，否则影响用户体验*/
+#button {
+    width: 125px;
+    height: 100px;
+    margin: 75px 55px;
+}
+
+/*设置@图标*/
+#button .apb {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    bottom: 97px;
+    left: 77px;
+    border-radius: 50%;
+    background-image: url('assets/images/atplus_white.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 15px;
+    background-color: #989fcf;
+    transition: all 0.5s;
+}
+
+#button:hover .apb {
+    width: 50px;
+    height: 50px;
+    bottom: 85px;
+    left: 65px;
+    background-image: url('assets/images/atplus_green.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px 30px;
+    background-color: #303f9f;
+}

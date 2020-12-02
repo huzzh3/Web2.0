@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title register
+    link(rel='stylesheet' href='style.css')
+    script(type='text/javascript' src='jquery.js')
+    script(type='text/javascript' src='validator.js')
+    script(type='text/javascript' src='signup.js')
+
+    body
+      h1 Register
+      form(method='post')
+        if error
+          div.error!= error
+        div.username
+          label(for='username') username
+          input(id='username', name='username' value=user.username)
+          div.error
+
+        div.sid
+          label(for='sid') studentId
+          input(id='sid', name='sid' value=user.sid)
+          div.error
+
+        div.phone
+          label(for='phone') phone
+          input(id='phone', name='phone' value=user.phone)
+          div.error
+
+        div.email
+          label(for='email') email
+          input(id='email', name='email' value=user.email)
+          div.error
+        
+        div.buttons
+          input.button.reset(type='reset' value='clear')
+          input.button.submit(type='submit' value='submit')

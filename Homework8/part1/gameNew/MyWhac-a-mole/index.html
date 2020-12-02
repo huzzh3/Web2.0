@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Whac-a-mole</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <script src="src/jquery.js"></script>
+        <script src="src/lodash.js"></script>
+        <script src="malo.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Whac-a-mole</h1>
+        <p id="introduction">Test your skill. How many boxes(moles) can you check(hit) in 30 seconds?</p>
+        <div class="content">
+            <input type="button" value="Start Game | Stop Game" id="gameButton">
+            <form name="data">
+                <label>Time:</label>
+                <input type="text" id="time" name="time" readonly="readonly" />
+                <input type="text" id="gameStatus" name="gameStatus" readonly="readonly" />
+                <label>Score:</label>
+                <input type="text" id="score" name="score" readonly="readonly" />
+            </form>
+        </div>
+        
+        <div class="holes">
+            <input class="radio_type" type="radio" id="hole0"  onclick="hit(0)">
+            <input class="radio_type" type="radio" id="hole1"  onclick="hit(1)">
+            <input class="radio_type" type="radio" id="hole2"  onclick="hit(2)">
+            <input class="radio_type" type="radio" id="hole3"  onclick="hit(3)">
+            <input class="radio_type" type="radio" id="hole4"  onclick="hit(4)">
+            <input class="radio_type" type="radio" id="hole5"  onclick="hit(5)">
+            <input class="radio_type" type="radio" id="hole6"  onclick="hit(6)">
+            <input class="radio_type" type="radio" id="hole7"  onclick="hit(7)">
+            <input class="radio_type" type="radio" id="hole8"  onclick="hit(8)">
+            <input class="radio_type" type="radio" id="hole9"  onclick="hit(9)">
+            <br>
+            <input class="radio_type" type="radio" id="hole10" onclick="hit(10)">
+            <input class="radio_type" type="radio" id="hole11" onclick="hit(11)">
+            <input class="radio_type" type="radio" id="hole12" onclick="hit(12)">
+            <input class="radio_type" type="radio" id="hole13" onclick="hit(13)">
+            <input class="radio_type" type="radio" id="hole14" onclick="hit(14)">
+            <input class="radio_type" type="radio" id="hole15" onclick="hit(15)">
+            <input class="radio_type" type="radio" id="hole16" onclick="hit(16)">
+            <input class="radio_type" type="radio" id="hole17" onclick="hit(17)">
+            <input class="radio_type" type="radio" id="hole18" onclick="hit(18)">
+            <input class="radio_type" type="radio" id="hole19" onclick="hit(19)">
+            <br>
+            <input class="radio_type" type="radio" id="hole20" onclick="hit(20)">
+            <input class="radio_type" type="radio" id="hole21" onclick="hit(21)">
+            <input class="radio_type" type="radio" id="hole22" onclick="hit(22)">
+            <input class="radio_type" type="radio" id="hole23" onclick="hit(23)">
+            <input class="radio_type" type="radio" id="hole24" onclick="hit(24)">
+            <input class="radio_type" type="radio" id="hole25" onclick="hit(25)">
+            <input class="radio_type" type="radio" id="hole26" onclick="hit(26)">
+            <input class="radio_type" type="radio" id="hole27" onclick="hit(27)">
+            <input class="radio_type" type="radio" id="hole28" onclick="hit(28)">
+            <input class="radio_type" type="radio" id="hole29" onclick="hit(29)">
+            <br>
+            <input class="radio_type" type="radio" id="hole30" onclick="hit(30)">
+            <input class="radio_type" type="radio" id="hole31" onclick="hit(31)">
+            <input class="radio_type" type="radio" id="hole32" onclick="hit(32)">
+            <input class="radio_type" type="radio" id="hole33" onclick="hit(33)">
+            <input class="radio_type" type="radio" id="hole34" onclick="hit(34)">
+            <input class="radio_type" type="radio" id="hole35" onclick="hit(35)">
+            <input class="radio_type" type="radio" id="hole36" onclick="hit(36)">
+            <input class="radio_type" type="radio" id="hole37" onclick="hit(37)">
+            <input class="radio_type" type="radio" id="hole38" onclick="hit(38)">
+            <input class="radio_type" type="radio" id="hole39" onclick="hit(39)">
+            <br>
+            <input class="radio_type" type="radio" id="hole40" onclick="hit(40)">
+            <input class="radio_type" type="radio" id="hole41" onclick="hit(41)">
+            <input class="radio_type" type="radio" id="hole42" onclick="hit(42)">
+            <input class="radio_type" type="radio" id="hole43" onclick="hit(43)">
+            <input class="radio_type" type="radio" id="hole44" onclick="hit(44)">
+            <input class="radio_type" type="radio" id="hole45" onclick="hit(45)">
+            <input class="radio_type" type="radio" id="hole46" onclick="hit(46)">
+            <input class="radio_type" type="radio" id="hole47" onclick="hit(47)">
+            <input class="radio_type" type="radio" id="hole48" onclick="hit(48)">
+            <input class="radio_type" type="radio" id="hole49" onclick="hit(49)">
+            <br>
+            <input class="radio_type" type="radio" id="hole50" onclick="hit(50)">
+            <input class="radio_type" type="radio" id="hole51" onclick="hit(51)">
+            <input class="radio_type" type="radio" id="hole52" onclick="hit(52)">
+            <input class="radio_type" type="radio" id="hole53" onclick="hit(53)">
+            <input class="radio_type" type="radio" id="hole54" onclick="hit(54)">
+            <input class="radio_type" type="radio" id="hole55" onclick="hit(55)">
+            <input class="radio_type" type="radio" id="hole56" onclick="hit(56)">
+            <input class="radio_type" type="radio" id="hole57" onclick="hit(57)">
+            <input class="radio_type" type="radio" id="hole58" onclick="hit(58)">
+            <input class="radio_type" type="radio" id="hole59" onclick="hit(59)">
+        </div>
+        <h2>Introductions:</h2>
+        <li>1. Click on the radio buttons(moles) as they are selected randomly by the computer.</li>
+        <li>2. 1 point per hit, minus 1 point per miss.</li>
+    </body>
+</html>

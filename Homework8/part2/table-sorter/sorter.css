@@ -1,0 +1,44 @@
+.main {
+    width: 600px;
+    margin: auto;
+}
+table {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    width: 700px;
+    height: 125px;
+}
+th {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: honeydew;
+    background-color: rgb(8, 30, 158);
+    border: 1px solid grey;
+    cursor: pointer;
+}
+td {
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid grey;
+}
+.alternate {
+    background-color: rgba(68, 66, 66, 0.452);
+}
+.seleted {
+    background-color: rgb(165, 172, 252);
+}
+.icon {
+    float: right;
+    width: 23px;
+    height: 23px;
+}
+.iconAsc {
+    background: url("assets/ascend.png") center no-repeat;
+}
+.iconDec {
+    background: url("assets/descend.png") center no-repeat;
+}
+th::selection {
+    color: white;
+}

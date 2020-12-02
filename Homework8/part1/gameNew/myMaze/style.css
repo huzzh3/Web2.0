@@ -1,0 +1,135 @@
+h1, h2, h3 {
+	text-align: center;
+}
+div .status {
+	text-align: center;
+}
+p {
+	width: 500px;
+	margin: 15px auto;
+}
+#check {
+	opacity: 0;
+	width: 200px;
+	top: 200px;
+	right: 200px;
+	float: left;
+	position: relative;
+	margin: auto;
+	height: 100px;
+	border: 1px solid black;
+}
+#maze {
+	position: relative;
+	margin: auto;
+	height: 300px;
+	width: 500px;
+
+}
+#start {
+	position: absolute;
+	top: 203px;
+	height: 30px;
+	width: 30px;
+	border: 2px solid black;
+	padding: 5px;
+	cursor: pointer;
+	font-family: sans-serif;
+	font-size: 20pt;
+	text-align: center;
+	background-color: rgb(100, 219, 248);
+	left: 0px;
+}
+#end {
+	position: absolute;
+	top: 204px;
+	left: 458px;
+	height: 30px;
+	width: 30px;
+	border: 2px solid black;
+	padding: 5px;
+	
+	font-family: sans-serif;
+	font-size: 20pt;
+	text-align: center;
+	background-color: #e2309ed5;
+	right: 0;
+}
+
+/*设置边界*/
+/*边界分成五块来处理分别是左上，中上，右上，下部与中部*/
+
+/*左上*/
+div.border {
+	z-index: 1;
+	border: 1px solid black;
+
+	background-color: #8ee63b;
+	position: absolute;
+	
+	height: 198px;
+	width: 140px;
+
+}
+
+div.losegame {
+	background-color: #df2727;
+}
+
+/*中上*/
+div.border + div.border {
+	/*设置index2是为了同时去掉左右两个部分的边界*/
+	z-index: 2;
+	border: 1px solid black;
+	border-left: none;
+	border-right: none;
+
+	
+	left: 141px;
+	height: 50px;
+	width: 210px;
+}
+
+/*右上*/
+div.border + div.border + div.border {
+	z-index: 1;
+	border: 1px solid black;
+	
+	left: 350px;
+	height: 200px;
+	width: 150px;
+}
+
+/*下部*/
+div.border + div.border + div.border + div.border {
+	z-index: 1;
+	border: 1px solid black;
+	
+	left: 0;
+	top: 250px;
+
+	height: 48px;
+	width: 500px;
+}
+
+/*中部*/
+div.border + div.border + div.border + div.border + div.border {
+	z-index: 2;
+	border: 1px solid black;
+	border-bottom: none;
+	
+	top: 100px;
+	left: 200px;
+	height: 150px;
+	width: 98px;
+}
+
+#mazeArea {
+	border: 1px solid black;
+
+	left: 0;
+	top: 0;
+
+	height: 300px;
+	width: 500;
+}

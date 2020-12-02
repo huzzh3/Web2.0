@@ -1,0 +1,93 @@
+.mainArea {
+    height: 900px;
+    width: 700px;
+    margin: auto;
+    border: 10px solid rgb(131, 63, 241);
+    border-radius: 25%;
+    box-shadow: 10px 10px 3px 3px rgba(0, 0, 0, 0.616), -10px -10px rgba(0, 0, 0, 0.616);
+}
+.title {
+    position: relative;
+    height: 100px;
+    width: 600px;
+    margin: 1px auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(253, 208, 139);
+    /*border: 1px solid gray;*/
+}
+.gameArea {
+    position: relative;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+}
+.game {
+    top: 50px;
+    position: relative;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    /*border: 1px solid gray;*/
+}
+.meauArea {
+    display: flex;
+    position: relative;
+    height: 100px;
+    width: 600px;
+    margin: auto;
+    padding: 15px;
+    /*border: 1px solid gray;*/
+}
+.shuffle,.changeDifficulty{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    left: 50px;
+    top: 25px;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    color: rgba(255, 255, 255, 0.863);
+    background-color: royalblue;
+    border: 5px solid rgb(27, 248, 182);
+    box-shadow: 3px 3px 3px 3px black;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: all 0.3s;
+}
+.changeDifficulty {
+    width: 270px;
+    height: 50px;
+    left: 98px;
+    font-size: 38px;
+}
+.shuffle:hover, .changeDifficulty:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+.puzzlePiece {
+    /*you need to add the width and height yourself*/
+    position: absolute;/*！！！*/
+    border: 1px solid gray;
+    margin: 2px;
+    overflow: hidden; /*you need to delete the redundancy part of the picture*/
+    transition: all 0.3s;
+}
+.picturePiece {
+    background-image: url(assets/panda.jpg);
+    position: relative;
+    /*if you change the game size you need to change below element*/
+    height: 500px;
+    width: 500px;
+    background-size: cover; /*！！！*/
+}
+.puzzlePiece:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.2s;
+}
