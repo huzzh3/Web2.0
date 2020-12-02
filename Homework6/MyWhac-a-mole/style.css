@@ -1,0 +1,95 @@
+h1,h2{
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+#introduction {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120%;
+}
+
+.content {
+    position: relative;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+    height: 100px;
+    width: 500px;
+}
+
+#gameButton {
+    float: left;
+    width: 165px;
+    margin-right: 110px;
+}
+
+#gameStatus {
+    margin-right: 100px;
+}
+
+#time {
+    width: 30px;
+}
+
+#score {
+    width: 30.5px
+}
+
+.holes {
+    margin: auto;
+    border: 1px solid black;
+    height: 200px;
+    width: 500px;
+
+    border-left: hidden;
+    border-right: hidden;
+}
+
+.radio_type{
+    outline: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 12.8px;
+    margin-left: 12.8px;
+    margin-bottom: 6px;
+    margin-top: 7px;
+    appearance: none;
+    vertical-align: middle;
+}
+
+.radio_type::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.radioChange{
+    outline: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 12.8px;
+    margin-left: 12.8px;
+    margin-bottom: 6px;
+    margin-top: 7px;
+    appearance: none;
+    vertical-align: middle;
+}
+
+.radioChange::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: blue;
+}

@@ -1,0 +1,125 @@
+body{
+    background-image: url("assets/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    height: 50px;
+    text-align: center;
+    background-image: url("assets/bannerbackground.png");
+    background-repeat: repeat-x;
+}
+.banner img{
+    height: 50px;
+}
+.heading{
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+.content{
+    position: relative;
+    overflow: hidden;
+    width: 800px;
+    border-width: 4px;
+    border-color: grey;
+    border-style: solid;
+    margin: auto;
+}
+.rotten_heading{
+    margin-left: 0;
+    width: 550px;
+    float: left;
+    background-image: url("assets/rottenbackground.png");
+    background-repeat: repeat-x;
+}
+.rotten_heading img{
+    vertical-align: bottom;
+    height: 83px;
+}
+#rating{
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;
+}
+#reviews{
+    font-size: 8pt;
+    color: white;
+}
+.comment{
+    float: left;
+    width: 550px;
+    margin: 0;
+    overflow: hidden;
+}
+.comment_left{
+    margin-bottom: 2%;   
+    margin-left: 2%;
+    width: 47%;
+    float: left;
+}
+.comment_word{
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #e1d697;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    overflow: hidden;
+    padding: 8px;
+}
+.commenter{
+    overflow: hidden;
+}
+.icon{
+    vertical-align: top;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.publication{
+    font-style: italic;
+}
+.div_used_for_sperate{
+    margin-bottom: 3em;
+}
+.comment_right{
+    margin-bottom: 2%;   
+    margin-right: 2%;
+    width: 47%;
+    float: right;
+}
+.overview_div{
+    width: 250px;
+    background-color: #a2b964;
+    float: right;
+}
+dl{
+    margin: 10px;
+}
+dt{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+}
+dd{
+    font-family: Arial, sans-serif;
+    font-size: 8pt;
+    margin-bottom: 1em;
+}
+#bar{
+    padding: 5px;
+    width: 800px;
+    text-align: center;
+    background-color: #a2b964;
+    float: right;
+    margin: 0;
+}
+.symbol{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
